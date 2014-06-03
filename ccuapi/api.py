@@ -107,7 +107,6 @@ class APIRequest(object):
         """
 
         data = {
-            "email-notification-name": AKAMAI_NOTIFY_EMAIL or '',
             "type": purgetype if purgetype else self.type,
             "domain": domain if domain else self.domain,
             "action": action if action else self.action,
